@@ -1,0 +1,6 @@
+CASE
+    WHEN "Slope" < 0.5 THEN 'Flat'
+    WHEN "Slope" >= 0.5 AND "Slope" <= 0.667 THEN 'Adequate'
+    WHEN "Slope" > 0.667 THEN 'Steep'
+    ELSE 'Undefined'
+END
